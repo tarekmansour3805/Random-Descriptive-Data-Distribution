@@ -1,0 +1,11 @@
+from scipy.stats import binom
+import seaborn as sb
+import statistics as stats
+import numpy as np
+
+binom.rvs(size=10000,n=10,p=0.2)
+
+data_binom = binom.rvs(n=10,p=0.5,loc=0,size=100)
+
+data_binom
+print ("mean:", binom.mean(binom))
